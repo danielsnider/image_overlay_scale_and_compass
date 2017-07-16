@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import image_overlay
+
+if __name__ == '__main__':
+    image_overlay.ros_main()
