@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(image_overlay)
+project(image_overlay_compass_and_scale)
 
 find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
@@ -17,7 +17,7 @@ catkin_package(
 )
 
 catkin_install_python(
-  PROGRAMS nodes/image_overlay
+  PROGRAMS nodes/image_overlay_compass_and_scale
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

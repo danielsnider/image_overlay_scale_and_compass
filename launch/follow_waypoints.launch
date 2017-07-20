@@ -1,7 +1,0 @@
-<launch>
-  <env name="ROSCONSOLE_FORMAT" value="[${thread}] [${node}/${function}:${line}]: ${message}"/>
-
-  <node pkg="image_overlay" type="image_overlay" name="image_overlay" output="screen" clear_params="true">
-  </node>
-</launch>
-

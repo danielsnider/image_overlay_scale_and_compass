@@ -1,14 +1,14 @@
 <package>
-  <name>image_overlay</name>
+  <name>image_overlay_compass_and_scale</name>
   <version>0.1.0</version>
   <description>
-      The image_overlay node will overlay images on a given image.
+      Add an indication of scale and compass to images.
   </description>
   <maintainer email="danielsnider12@gmail.com">Daniel Snider</maintainer>
   <author email="danielsnider12@gmail.com">Daniel Snider</author>
   <license>Unlicense</license>
-  <url type="website">http://wiki.ros.org/image_overlay</url>
-  <url type="repository">https://github.com/danielsnider/image_overlay</url>
+  <url type="website">http://wiki.ros.org/image_overlay_compass_and_scale</url>
+  <url type="repository">https://github.com/danielsnider/image_overlay_compass_and_scale</url>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>rospy</build_depend>

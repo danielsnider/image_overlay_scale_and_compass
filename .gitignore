@@ -2,3 +2,6 @@
 *.swp
 *.swo
 output.png
+ignore/
+build_isolated/
+devel_isolated/

@@ -1,25 +1,58 @@
-# image_overlay [![Build Status](http://build.ros.org/buildStatus/icon?job=Kbin_uX64__image_overlay__ubuntu_xenial_amd64__binary)](http://build.ros.org/job/Kbin_uX64__image_overlay__ubuntu_xenial_amd64__binary)
+# image_overlay_compass_and_scale [![Build Status](http://build.ros.org/buildStatus/icon?job=Kbin_uX64__image_overlay_compass_and_scale__ubuntu_xenial_amd64__binary)](http://build.ros.org/job/Kbin_uX64__image_overlay_compass_and_scale__ubuntu_xenial_amd64__binary)
 
-A package that will buffer `move_base` goals until instructed to navigate to all waypoints in sequence.
+Add an indication of scale and compass to images.
 
-Full documentation on wiki: [http://wiki.ros.org/image_overlay](http://wiki.ros.org/image_overlay)
+Full documentation on wiki: [http://wiki.ros.org/image_overlay_compass_and_scale](http://wiki.ros.org/image_overlay_compass_and_scale)
 
-![image_overlay](https://github.com/danielsnider/image_overlay/blob/master/readme_images/image_overlay_rviz.png "rviz")
+![image_overlay_compass_and_scale](https://github.com/danielsnider/image_overlay_compass_and_scale/blob/master/readme_images/image_overlay_compass_and_scale_rviz.png "rviz")
 
-## Installation
+## Quick Start
 
-```
-  $ sudo apt-get install ros-kinetic-image-overlay
-```
-
-## Usage
-
-To set waypoints you can either publish a ROS `PoseWithCovarianceStamped` message to the `/initialpose` topic directly or use RViz’s tool "2D Pose Estimate" to click anywhere. To visualize the waypoints as pink arrows in RViz, configure RViz to display the topic `/current_waypoints` which is published by `image_overlay` and must be subscribed to in Rviz as a `PoseAarray` type.
-
-To initiate waypoint following send a "path ready" message.
+1. Install:
 
 ```
-  $ rostopic pub /path_ready std_msgs/Empty -1
+$ sudo apt-get install ros-kinetic-image-overlay-compass-and-scale
+```
+2. Launch node:
+
+```
+$ roslaunch image_overlay_compass_and_scale overlay.launch
 ```
 
-**Full documentation on wiki: [http://wiki.ros.org/image_overlay](http://wiki.ros.org/image_overlay)**
+3. Publish heading and scale values
+
+```
+$ rostopic pub /heading std_msgs/Float32 45
+$ rostopic pub /scale std_msgs/Float32 133
+```
+
+4. View resulting image
+
+```
+$ rqt_image_view /science/overlay/compressed
+```
+
+## Command Line Interface (CLI)
+
+Invoke once using Command Line Interface (CLI) and save to disk instead of pulishing to ROS.
+
+```
+$ roscd image_overlay_compass_and_scale
+$ ./src/image_overlay_compass_and_scale/image_overlay.py --input-image ~/mars.png --heading 45 --scale-text 133 --output-file output.png
+```
+
+### CLI Options
+```
+Usage: image_overlay.py [OPTIONS]
+
+Options:
+--input-image TEXT  Path to input image file  [required]
+--heading FLOAT     Current heading relative to north in degrees  [required]
+--scale-text FLOAT  The value to be displayed on the right of the scale bar
+                    in centemeters  [required]
+--output-file TEXT  Output filename to save result to
+                    [default='output.png']
+--help              Show this message and exit.
+```
+
+**Full documentation on wiki: [http://wiki.ros.org/image_overlay_compass_and_scale](http://wiki.ros.org/image_overlay_compass_and_scale)**
