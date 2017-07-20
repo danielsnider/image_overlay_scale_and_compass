@@ -1,3 +1,3 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package image_overlay_compass_and_scale
+Changelog for package image_overlay_scale_and_compass
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

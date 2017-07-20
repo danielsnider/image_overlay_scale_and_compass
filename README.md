@@ -1,10 +1,10 @@
-# image_overlay_compass_and_scale [![Build Status](http://build.ros.org/buildStatus/icon?job=Kbin_uX64__image_overlay_compass_and_scale__ubuntu_xenial_amd64__binary)](http://build.ros.org/job/Kbin_uX64__image_overlay_compass_and_scale__ubuntu_xenial_amd64__binary)
+# image_overlay_scale_and_compass [![Build Status](http://build.ros.org/buildStatus/icon?job=Kbin_uX64__image_overlay_scale_and_compass__ubuntu_xenial_amd64__binary)](http://build.ros.org/job/Kbin_uX64__image_overlay_scale_and_compass__ubuntu_xenial_amd64__binary)
 
 Add an indication of scale and compass to images.
 
-Full documentation on wiki: [http://wiki.ros.org/image_overlay_compass_and_scale](http://wiki.ros.org/image_overlay_compass_and_scale)
+Full documentation on wiki: [http://wiki.ros.org/image_overlay_scale_and_compass](http://wiki.ros.org/image_overlay_scale_and_compass)
 
-![image_overlay_compass_and_scale](https://github.com/danielsnider/image_overlay_compass_and_scale/blob/master/readme_images/image_overlay_compass_and_scale_rviz.png "rviz")
+![image_overlay_scale_and_compass](https://github.com/danielsnider/image_overlay_scale_and_compass/blob/master/readme_images/image_overlay_scale_and_compass_rviz.png "rviz")
 
 ## Quick Start
 
@@ -16,7 +16,7 @@ $ sudo apt-get install ros-kinetic-image-overlay-compass-and-scale
 2. Launch node:
 
 ```
-$ roslaunch image_overlay_compass_and_scale overlay.launch
+$ roslaunch image_overlay_scale_and_compass overlay.launch
 ```
 
 3. Publish heading and scale values
@@ -37,8 +37,8 @@ $ rqt_image_view /science/overlay/compressed
 Invoke once using Command Line Interface (CLI) and save to disk instead of pulishing to ROS.
 
 ```
-$ roscd image_overlay_compass_and_scale
-$ ./src/image_overlay_compass_and_scale/image_overlay.py --input-image ~/mars.png --heading 45 --scale-text 133 --output-file output.png
+$ roscd image_overlay_scale_and_compass
+$ ./src/image_overlay_scale_and_compass/image_overlay.py --input-image ~/mars.png --heading 45 --scale-text 133 --output-file output.png
 ```
 
 ### CLI Options
@@ -55,4 +55,4 @@ Options:
 --help              Show this message and exit.
 ```
 
-**Full documentation on wiki: [http://wiki.ros.org/image_overlay_compass_and_scale](http://wiki.ros.org/image_overlay_compass_and_scale)**
+**Full documentation on wiki: [http://wiki.ros.org/image_overlay_scale_and_compass](http://wiki.ros.org/image_overlay_scale_and_compass)**

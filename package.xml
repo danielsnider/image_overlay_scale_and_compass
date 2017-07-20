@@ -1,5 +1,5 @@
 <package>
-  <name>image_overlay_compass_and_scale</name>
+  <name>image_overlay_scale_and_compass</name>
   <version>0.1.0</version>
   <description>
       Add an indication of scale and compass to images.
@@ -7,8 +7,8 @@
   <maintainer email="danielsnider12@gmail.com">Daniel Snider</maintainer>
   <author email="danielsnider12@gmail.com">Daniel Snider</author>
   <license>Unlicense</license>
-  <url type="website">http://wiki.ros.org/image_overlay_compass_and_scale</url>
-  <url type="repository">https://github.com/danielsnider/image_overlay_compass_and_scale</url>
+  <url type="website">http://wiki.ros.org/image_overlay_scale_and_compass</url>
+  <url type="repository">https://github.com/danielsnider/image_overlay_scale_and_compass</url>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>rospy</build_depend>
