@@ -2,9 +2,9 @@
 
 Add an indication of scale and compass to images.
 
-Full documentation on wiki: [http://wiki.ros.org/image_overlay_scale_and_compass](http://wiki.ros.org/image_overlay_scale_and_compass)
-
 ![image_overlay_scale_and_compass](http://wiki.ros.org/image_overlay_scale_and_compass?action=AttachFile&do=get&target=mars.png "mars")
+
+Full documentation on wiki: [http://wiki.ros.org/image_overlay_scale_and_compass](http://wiki.ros.org/image_overlay_scale_and_compass)
 
 ## Quick Start
 
