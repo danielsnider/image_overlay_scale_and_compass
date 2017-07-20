@@ -1,6 +1,6 @@
 <package>
   <name>image_overlay_scale_and_compass</name>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <description>
       Add an indication of scale and compass to images.
   </description>
