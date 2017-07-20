@@ -21,6 +21,6 @@
   <run_depend>cv_bridge</run_depend>
   <run_depend>python-numpy</run_depend>
   <run_depend>python-opencv</run_depend>
-  <run_depend>python-click</run_depend>
+  <run_depend>click</run_depend>
 
 </package>
